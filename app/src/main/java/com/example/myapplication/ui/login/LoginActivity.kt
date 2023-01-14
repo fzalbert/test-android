@@ -43,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (loginState.usernameError != null) {
                 username.error = getString(loginState.usernameError)
+                username.error = "не верно"
             }
             if (loginState.passwordError != null) {
                 password.error = getString(loginState.passwordError)
